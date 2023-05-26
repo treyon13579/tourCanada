@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        
+
+    <style>
+
+        .topbar-link{
+            display: inline-block;
+            margin-bottom: 0;
+            text-decoration:none; 
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.875rem;
+
+
+}
+
+        .bottombar-link{
+            display: inline-block;
+            margin-bottom: 0;
+            text-decoration:none; 
+            color: rgba(94, 89, 89, 0.555);
+            font-size: 0.975rem;
+            margin-left: 5px;
+        }
+
+        a{
+            transition: color .25s ease-in-out;
+}
+
+        a:hover {
+            color: azure;
+}
+        .left_carousel{
+            left: -40px; 
+           
+}
+        .right_carousel{
+            right: -40px; 
+}
+
+        .topbar-text{
+
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+
+
+   
+  
+
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<!-- Topbar begins here -->
+
+<nav class="navbar d-flex bg-dark justify-content-between align-items-center">
+
+    <!-- Container start -->
+    <div class="container">
+
+    <!-- Medium and smaller device drop down starts here -->
+
+        <div class="topbar-text dropdown d-md-none">
+            <a class="topbar-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Useful links</a>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item text-nowrap text-decoration-none bg-dark d-inline-block" href="tel:0015553743853">
+                        <i class="fa-solid fa-headphones" style="color: #cb3a15;"></i>
+                        <span class="me-1 topbar-link" style="color:rgba(255, 255, 255, 0.45)">(+1)555-374-3853</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a class="dropdown-item text-nowrap text-decoration-none bg-dark d-inline-block" href="#">
+                        <i class="fa-solid fa-mountain-sun fa-fade" style="color: #0f701f;"></i>
+                        <span class="me-1 topbar-link" style="color:rgba(255, 255, 255, 0.45)">Location</span>
+                    </a>
+                
+                </li>
+            </ul>           
+
+        </div>
+    <!-- Medium and smaller device drop down ends here -->
+
+        <div class="topbar-link text-nowrap  d-none d-md-inline-block mb-0 text-decoration-none">
+            <i class="fa-solid fa-headphones" style="color: #cb3a15;"></i>
+            <span class="me-1" style="color:rgba(255, 255, 255, 0.45)">Support</span>
+            <a href="tel:0015553743853" class="topbar-link">(+1)555-374-3853</a>
+        </div>
+        
+        <!-- Topbar carousel begins here -->
+        <div id="carouselExample" class="carousel slide topbar-link d-none d-md-block">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    Excellent Guided Tours offered 365 days of the year 
+                </div>
+                <div class="carousel-item">
+                    Experience the thrills of nature animals and more  
+                </div>
+                <div class="carousel-item">
+                    Explore nature like never before with TourCanada
+                </div>
+            </div>
+            <button class="carousel-control-prev left_carousel" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next right_carousel" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Topbar Carousel ends here -->
+
+        <div class="text-nowrap ms-3">
+            <a href="#location_info" class="topbar-link me-4 d-none d-md-inline-block">
+                <i class="fa-solid fa-mountain-sun fa-fade" style="color: #0f701f;"></i>
+                Locations
+            </a>
+
+            <div class="dropdown topbar-text disable-autohide">
+                <button id="dis_button" class="topbar-link bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-thin fa-map fa-fade" style="color: #ae3f0f;"></i>
+                    Travel Destinations 
+                </button>
+                <ul id="disappear" class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                        <i class="fa-solid fa-mountain-sun" style="color: #1caf34;"></i>
+                        <a class="dropdown-item d-inline-block " href="#img1">Scenic Mountain </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-water" style="color: #16daa9;"></i>
+                        <a class="dropdown-item d-inline-block" href="#img2">Great Lakes</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-tree" style="color: #38ce5b;"></i>
+                        <a class="dropdown-item d-inline-block" href="#img3">Forest and Rivers</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a target="_blank" class="dropdown-item active" href="https://natureconservancy.ca/en/">Learn about Nature and Conservation</a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>         
+
+
+    </div>
+    <!-- Container Ends -->
+</nav>
+
+<!-- Topbar Ends here -->
+
+<!-- Navbar begins here -->
+
+<nav id="TDnavbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-md-top">
+    <div class="container-sm">
+        <a class="navbar-brand" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" target="_blank">
+            <img width="35" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVFxRjWSUvdviEKu8CWCS0i3lofU48sFSfg&usqp=CAU" alt="maple leaf">
+            <span class="fw-semibold fs-4 d-inline-block">TourCanada</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+               
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-inline-block" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tours
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#mountain_tour">Mountain Tour</a></li>
+                        <li><a class="dropdown-item" href="#lake_tour">Lake Tours</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#forest_tour">Forest Camping <sup class="fs-6 text-danger">1</sup></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-danger shadow fa-fade"  style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .82rem; --fa-animation-duration:3.5s" data-bs-toggle="popover" data-bs-title="Travel Warnings"
+                        data-bs-content="Covid-19 Travel restrictions should be confirmed before your travel.">Travel Alerts</button>
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search Destinations" aria-label="Search" size="30">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Navbar Ends here -->
+
+<!-- Carousel Begins Here -->
+
+
+<div  id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button id="img1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button id="img2"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button id="img3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img  src="https://hips.hearstapps.com/hmg-prod/images/moraine-lake-with-alpen-glow-on-ten-peaks-banff-royalty-free-image-1623350236.jpg" class="d-block w-100" alt="mountain">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lake with mountain behind</h5>
+                <p>Stunning example of a mountainous range</p>
+            </div>
+        </div>
+        <div class="carousel-item mx-auto">
+            <img src="https://wallpaperaccess.com/full/1223731.jpg" width="2400" height="1600" alt="lake">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Gorgeous Lake View</h5>
+                <p>A kayaking dream come through but if you love fishing why NOT! </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img  src="https://hips.hearstapps.com/hmg-prod/images/mt-assiniboine-provincial-park-at-sunrise-royalty-free-image-1623253564.jpg" width="3400" height="2300" alt="mountain">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Welcome to the Forest</h5>
+                <p>Let's go camping!!!!!!!!!!!!!!!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!-- Carousel Ends Here -->
+
+
+<!-- Cards begin here -->
+<div class="container-fluid my-5" id="location_info">
+
+    <div class="row justify-content-around">
+
+        <div id="mountain_tour" class="card border-0" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/photographer-hand-holding-camera-standing-viewpoint-clouds-panorama-viewpoint-sunrise_335224-1320.jpg?w=1380&t=st=1682187971~exp=1682188571~hmac=2eb880bcfd5c5323c979676f229de1af4a99f49b28d5448a5256be03dd9e6b05" class="card-img-top" alt="Mountain Climbing">
+            <div class="card-body">
+                <h5 class="card-title">Impeccable Views </h5>
+                <p class="card-text">Improve your physical and mental health and well-being climbing.This low impact excercise climbing is a great way to improve your cardiovascular health.
+                    Adventure awaits you.see our booking page above. 
+                </p>
+                <a href="#" class="btn btn-primary">Learn More about our hike destination and tours</a>
+            </div>
+        </div>
+
+        <div id="lake_tour" class="card border-0" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/camping-tents-pine-trees-with-sunlight-pang-ung-lake-mae-hong-son-thailand_335224-931.jpg?w=1380&t=st=1682187448~exp=1682188048~hmac=ad3fa25e2e052287fdb94cdd583d60aeafe9994ff2570a011e78cd213f7df7b8" class="card-img-top" alt="Lake Side">
+            <div class="card-body">
+                <h5 class="card-title">Sunrise by the Lakes</h5>
+                <p class="card-text">Enjoy a range of activities such as swimming, boating, camping , fishing and picnicking.Relax and enjoy nature whether
+                    you prefer an active day or water sports - you're in for a fun and enjoyable experience. 
+                </p>
+                <a href="#" class="btn btn-primary">See our top destinations of stunning lakes</a>
+            </div>
+        </div>
+
+        <div id="forest_tour" class="card border-0" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/couple-trekking-together_53876-9.jpg?w=1380&t=st=1682187513~exp=1682188113~hmac=64ebe151e28292e724e2e505631868f3db3c8886e0981ce35098b6fa1b906f68" class="card-img-top" alt="hike trails">
+            <div class="card-body">
+                <h5 class="card-title">Hike Trails </h5>
+                <p class="card-text">Explore easy and flat to steep and challenging forest trails, begin your backpacking journey with our exquisite and alluring locales. Amenities offered on some 
+                    trails - campsites, picnic, restrooms etc. 
+                </p>
+                <a href="#" class="btn btn-primary">Never Hike, Lets Make it possible.. Learn More!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Cards Ends Here -->
+
+    <!-- footer begins here -->
+
+    <footer class="container-fluid mt-5 bg-secondary-subtle d-flex text-center" style="height:80px">
+            <div class="col-sm-7 align-self-end d-none d-md-block pb-1">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li>
+                            <div class="bottombar-link breadcrumb-item active mx-5">© 2023 TourCanada, Inc.</div>
+                        </li>
+                        <li class="breadcrumb-item bottombar-link"><a href="#CarouselExample">Home</a></li>
+                        <li class="breadcrumb-item bottombar-link"><a href="https://www.theblondeabroad.com/ultimate-canada-travel-guide/" target="_blank">Blog</a></li>
+                        <li class="breadcrumb-item bottombar-link active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="col-sm-9 align-self-end d-md-none pb-1">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li>
+                            <div class="bottombar-link breadcrumb-item active mx-1">© 2023 TourCanada, Inc.</div>
+                        </li>
+                        <li class="breadcrumb-item bottombar-link"><a href="#CarouselExample">Home</a></li>
+                        <li class="breadcrumb-item bottombar-link"><a
+                                href="https://www.theblondeabroad.com/ultimate-canada-travel-guide/" target="_blank">Blog</a></li>
+                        <li class="breadcrumb-item bottombar-link active d-none d-sm-block" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-5 align-self-end pb-3 d-none d-md-block mx-auto">
+                        <li class="breadcrumb-item bottombar-link"></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-facebook" style="color: #0c0d0d;"></i></a></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-instagram" style="color: #161717;"></i></a></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-twitter"></i></a></li>
+            </div>
+            <div class="col-sm-3 align-self-end pb-3 d-md-none mx-auto">
+                        <li class="breadcrumb-item bottombar-link"></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-facebook" style="color: #0c0d0d;"></i></a></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-instagram" style="color: #161717;"></i></a></li>
+                        <li class="bottombar-link"><a href="#CarouselExample"><i class="fa-brands fa-twitter"></i></a></li>
+            </div>
+    
+    </footer>
+
+    <!-- footer ends here -->
+
+    
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b3cf718f9b.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        // function TDFunction() {
+        //         var x = document.getElementById("TDnavbar");
+        //             x.style.display="none"
+                
+        //     }
+        // function CarFunction() {
+        //         var x = document.getElementById("TDnavbar");
+        //         x.style.display = "flex"
+
+        //     }
+
+        $(document).ready(function () {
+            console.log("jQuery is loaded!")
+
+
+         
+
+                    
+            
+            
+            $("#dis_button").on("click", function(){ 
+                $("#TDnavbar").hide()
+                var y = document.getElementById("disappear");
+                    y.style.display = "none"                
+                $("#disappear").toggle(function(){
+
+                     $(window)
+                        .on("scroll", function () {
+                            var x = document.getElementById("TDnavbar");
+                            var y = document.getElementById("disappear");
+                            x.style.display = "flex"
+                            y.style.display = "none"
+
+                        })
+                }) 
+
+
+                })
+            $("#dis_button").on("blur", function () {
+                $("#TDnavbar").show()
+                $("#disappear").hide(function () {
+
+                    $(window)
+                        .on("scroll", function () {
+                            var x = document.getElementById("TDnavbar");
+                            var y = document.getElementById("disappear");
+                            x.style.display = "flex"
+                            y.style.display = "none"
+
+                        })
+                })
+            })
+               
+
+                    
+                
+
+                
+
+            })
+           
+                
+       
+                
+                
+
+        
+
+            
+
+            
+
+
+    </script>
+
+        
+</body>
+
+</html>
